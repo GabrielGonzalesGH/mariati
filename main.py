@@ -10,7 +10,7 @@ from diffusers import StableDiffusionXLPipeline, EulerDiscreteScheduler
 MAX_SEED = np.iinfo(np.int32).max
 MAX_IMAGE_SIZE = 1344
 SAVE_DIR = "/content/images"
-MODEL_PATH = '/content/StableUI_base/model_link.safetensors'
+MODEL_PATH = '/content/mariati/model_link.safetensors'
 
 # Setup
 os.makedirs(SAVE_DIR, exist_ok=True)
