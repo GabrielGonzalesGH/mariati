@@ -57,7 +57,7 @@ footer {
 """
 
 examples = [
-    "a cat",
+    "score_9, score_8_up, score_7_up",
     "a cat in the hat",
     "a cat in the cowboy hat",
 ]
@@ -87,7 +87,7 @@ with gr.Blocks(css=css, theme='ParityError/Interstellar') as app:
         with gr.Group():
             with gr.Accordion("⚙️ Settings", open=False):
                 negative_prompt = gr.Text(label="Negative prompt", placeholder="Enter a negative prompt",
-                                          lines=3, value='lowres, text, error, cropped, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature')
+                                          lines=3, value='lowres, text, error, cropped, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature, score_6, score_5, score_4, worst quality, low quality')
                 
                 seed = gr.Slider(label="Seed (-1 for random)", minimum=-1, maximum=MAX_SEED, step=1, value=-1)
                 
